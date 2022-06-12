@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JhonyRovetta">
+    <title>Dot Menu</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="box" class="box" onclick="ActiveBox()"></div>
+        <ul class="list">
+            <li id="moon" class="icon" style="--x: -1; --y: -1; --z: 8;" onclick="EnableIcon(this.id)"><ion-icon name="moon-outline"></ion-icon></li>
+            <li id="chatbubble" class="icon" style="--x: 0; --y: -1; --z: 6;" onclick="EnableIcon(this.id)"><ion-icon name="chatbubble-outline"></ion-icon></li>
+            <li id="time" class="icon" style="--x: 1; --y: -1; --z: 4;" onclick="EnableIcon(this.id)"><ion-icon name="time-outline"></ion-icon></li>
+            <li id="camera" class="icon" style="--x: -1; --y: 0; --z: 2;" onclick="EnableIcon(this.id)"><ion-icon name="camera-outline"></ion-icon></li>
+            <li id="notification" class="icon" style="--x: 0; --y: 0; --z: 9;" onclick="EnableIcon(this.id)"><ion-icon name="notifications-outline"></ion-icon></li>
+            <li id="diamond" class="icon" style="--x: 1; --y: 0; --z: 1;" onclick="EnableIcon(this.id)"><ion-icon name="diamond-outline"></ion-icon></li>
+            <li id="water" class="icon" style="--x: -1; --y: 1; --z: 3;" onclick="EnableIcon(this.id)"><ion-icon name="water-outline"></ion-icon></li>
+            <li id="alarm" class="icon" style="--x: 0; --y: 1; --z: 5;" onclick="EnableIcon(this.id)"><ion-icon name="alarm-outline"></ion-icon></li>
+            <li id="game" class="icon" style="--x: 1; --y: 1; --z: 7;" onclick="EnableIcon(this.id)"><ion-icon name="game-controller-outline"></ion-icon></li>
+        </ul>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="src/js/script.js"></script>
+</body>
+</html>

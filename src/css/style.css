@@ -1,0 +1,96 @@
+/* Author: JhonyRovettaBR */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.container .box{
+    position: absolute;
+    background: #333;
+    border-radius: 10%;
+    height: 105px;
+    width: 105px;
+    transition: 0.5s;
+}
+
+.container .box.active{
+    height: 380px;
+    width: 380px;
+}
+
+.container:hover{
+    transform: scale(1.1);
+}
+
+.container .list{
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .list .icon{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: var(--z);
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background: #fff;
+    color: #fff;
+    transform: translate(calc(18px * var(--x)), calc(18px * var(--y)));
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--z));
+}
+
+.container.active .list .icon{
+    height: 90px;
+    width: 90px;
+    transform: translate(calc(120px * var(--x)), calc(120px * var(--y)));
+    background: #444;
+}
+
+.container.active .list .icon:hover{
+    cursor: pointer;
+}
+
+.container .list .icon ion-icon{
+    transform: scale(0.5);
+    transition: 0.2s;
+    transition-delay: calc(0.1s * var(--z)), 0.1s, 0.1s;
+    transition-property: transform, color, filter;
+}
+
+.container.active .list .icon ion-icon{
+    transform: scale(2);
+}
+
+.container.active .list .icon:hover ion-icon{
+    color: #24ecff;
+    filter: drop-shadow(0 0 5px #24ecff);
+}
+
+.container.active .list .icon.enable ion-icon{
+    color: #93ff2d;
+    filter: drop-shadow(0 0 5px #93ff2d);
+}
